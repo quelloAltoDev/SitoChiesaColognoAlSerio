@@ -279,7 +279,7 @@ nav ul li a:hover {
 
         .carousel-overlay {
         width: 80%;
-        height: 70%;
+        height: 60%;
         padding: clamp(30px, 6vw, 40px);
         display: flex;
         flex-direction: column;
