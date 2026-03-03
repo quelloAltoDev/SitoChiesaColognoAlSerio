@@ -307,12 +307,12 @@ nav ul li a:hover {
     }
 
     .carousel-overlay h2 {
-        font-size: clamp(0.9rem, 5.5vw, 1.3rem);
+        font-size: clamp(0.9rem, 6vw, 2rem);
         margin-bottom: 10px;
     }
 
     .carousel-overlay h3 {
-        font-size: clamp(0.72rem, 4vw, 1rem);
+        font-size: clamp(0.72rem, 4.5vw, 1.5rem);
         line-height: 1.5;
     }
 }
