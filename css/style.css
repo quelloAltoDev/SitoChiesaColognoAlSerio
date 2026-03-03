@@ -266,7 +266,7 @@ nav ul li a:hover {
     letter-spacing: 0.5px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 800px) {
     .main-section {
         height: 58vh;
         position: relative;
@@ -307,12 +307,12 @@ nav ul li a:hover {
     }
 
     .carousel-overlay h2 {
-        font-size: clamp(0.9rem, 5vw, 1.3rem);
+        font-size: clamp(0.9rem, 5.5vw, 1.3rem);
         margin-bottom: 10px;
     }
 
     .carousel-overlay h3 {
-        font-size: clamp(0.72rem, 3.5vw, 1rem);
+        font-size: clamp(0.72rem, 4vw, 1rem);
         line-height: 1.5;
     }
 }
