@@ -268,34 +268,55 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
     .main-section {
-        height: 30vh;
+        height: 58vh;
+        position: relative;
     }
 
-    .carousel,
+    /* Nasconde il carosello su mobile */
     .carousel-track-container {
-        height: 100%;
+        display: none;
     }
 
-    .carousel-slide img {
-        width: 100%;
+        .carousel-overlay {
+        width: 80%;
+        height: 50%;
+        padding: clamp(20px, 5vw, 32px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Immagine fissa mobile */
+    .carousel::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url('../cartella immagini/foto_mobile.jpg') center center / cover no-repeat;
+        z-index: 0;
+    }
+
+    .carousel {
+        position: relative;
         height: 100%;
-        object-fit: cover;
     }
 
     .carousel-overlay {
-        padding: clamp(15px, 3vw, 20px);
-        min-height: 120px;
+        position: relative;
+        z-index: 2;
+        padding: clamp(16px, 4vw, 24px);
     }
 
     .carousel-overlay h2 {
-        font-size: clamp(0.85rem, 3.8vw, 1.2rem);
+        font-size: clamp(0.9rem, 5vw, 1.3rem);
+        margin-bottom: 10px;
     }
 
     .carousel-overlay h3 {
-        font-size: clamp(0.7rem, 2.8vw, 0.95rem);
-        line-height: 1.4;
+        font-size: clamp(0.72rem, 3.5vw, 1rem);
+        line-height: 1.5;
     }
 }
+
 
 
 /* === ABOUT SECTION === */
