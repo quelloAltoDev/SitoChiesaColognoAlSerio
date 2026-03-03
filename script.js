@@ -20,6 +20,30 @@ function moveCarousel() {
 setInterval(moveCarousel, intervalTime);
 });
 
+    const btn = document.getElementById('hamburgerBtn');
+    const menu = document.getElementById('navMenu');
+
+    btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        btn.classList.toggle('open');
+        menu.classList.toggle('open');
+    });
+
+    // Chiude il menu cliccando un link
+    menu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            btn.classList.remove('open');
+            menu.classList.remove('open');
+        });
+    });
+
+    // Chiude il menu cliccando fuori
+    document.addEventListener('click', (e) => {
+        if (menu.classList.contains('open') && !menu.contains(e.target) && !btn.contains(e.target)) {
+            btn.classList.remove('open');
+            menu.classList.remove('open');
+        }
+    });
 
 document.getElementById("contactForm").addEventListener("submit", function(e) {
     e.preventDefault(); // evita il refresh della pagina
