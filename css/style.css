@@ -495,7 +495,7 @@ hr.separator {
     }
     
     .hero-content h2{
-        font-size: clamp(0.9rem, 7vw, 1.8rem);
+        font-size: clamp(0.9rem, 5.5vw, 1.6rem);
     }
 
     .hero-btn {
