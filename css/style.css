@@ -490,17 +490,18 @@ hr.separator {
         letter-spacing: 0.5px;
     }
 
-    .hero-content h2{
+    .hero-content {
         font-size: clamp(0.9rem, 5.5vw, 1.3rem);
     }
+    
     .hero-content h2{
-        font-size: clamp(0.9rem, 6vw, 1.4rem);
+        font-size: clamp(0.9rem, 7vw, 1.8rem);
     }
 
     .hero-btn {
         margin-top: 12px;
         padding: 8px 20px;
-        font-size: 0.85rem;
+        font-size: 1.3rem;
     }
 }
 
