@@ -307,12 +307,12 @@ nav ul li a:hover {
     }
 
     .carousel-overlay h2 {
-        font-size: clamp(0.9rem, 6vw, 2rem);
+        font-size: clamp(0.9rem, 5.5vw, 1.3rem);
         margin-bottom: 10px;
     }
 
     .carousel-overlay h3 {
-        font-size: clamp(1rem, 5vw, 2rem);
+        font-size: clamp(0.72rem, 3.5vw, 1rem);
         line-height: 1.5;
     }
 }
@@ -488,6 +488,13 @@ hr.separator {
         font-size: clamp(0.85rem, 3.5vw, 1.2rem);
         margin: 0 0 12px 0;
         letter-spacing: 0.5px;
+    }
+
+    .hero-content h2{
+        font-size: clamp(0.9rem, 5.5vw, 1.3rem);
+    }
+    .hero-content h2{
+        font-size: clamp(0.9rem, 6vw, 1.2rem);
     }
 
     .hero-btn {
