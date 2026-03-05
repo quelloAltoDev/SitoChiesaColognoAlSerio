@@ -494,10 +494,11 @@ hr.separator {
     }
     
     .hero-content h2{
-        font-size: clamp(1rem, 5.5vw, 1.6rem);
+        font-size: clamp(0.6rem, 5.5vw, 1.6rem);
         font-weight: 700;
         line-height: 1.6;
-                max-width: 80%;
+        letter-spacing: 0.5px;
+        max-width: 80%;
         margin: 0 auto 25px auto;
         padding: 10px;
     }
