@@ -495,7 +495,7 @@ hr.separator {
         letter-spacing: 1px;
         max-width: 80%;
         margin: 0 auto 20px auto;
-        text-align: justify;
+        text-align: center;
     }
 
     .hero-content {
