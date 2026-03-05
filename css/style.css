@@ -491,7 +491,7 @@ hr.separator {
 
     .hero-section h2 {
         font-size: clamp(1rem, 5.5vw, 1.6rem);
-        line-height: 2.0;
+        line-height: 3.0;
         letter-spacing: 1px;
         max-width: 80%;
         margin: 0 auto 20px auto;
