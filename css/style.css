@@ -268,7 +268,7 @@ nav ul li a:hover {
 
 @media (max-width: 800px) {
     .main-section {
-        height: 60vh;
+        height: 70vh;
         position: relative;
     }
 
@@ -493,7 +493,7 @@ hr.separator {
         font-size: clamp(1rem, 5.5vw, 1.6rem);
         line-height: 1.7;
         letter-spacing: 1px;
-        max-width: 92%;
+        max-width: 80%;
         margin: 0 auto 20px auto;
         text-align: justify;
     }
@@ -504,6 +504,10 @@ hr.separator {
     
     .hero-content h2{
         font-size: clamp(0.9rem, 5.5vw, 1.6rem);
+        font-weight: 700;
+        line-height: 1.6;
+        margin: 0 auto 25px auto;
+        padding: 15px;
     }
 
     .hero-btn {
