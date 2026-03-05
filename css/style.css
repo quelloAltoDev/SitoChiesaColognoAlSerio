@@ -498,10 +498,6 @@ hr.separator {
         text-align: justify;
         padding: 20px;
     }
-
-    .hero-content {
-        font-size: clamp(0.9rem, 5.5vw, 1.3rem);
-    }
     
     .hero-btn {
         margin-top: 12px;
