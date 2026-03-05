@@ -431,7 +431,7 @@ hr.separator {
 }
 
 .hero-content {
-    position: relative;
+    position: central;
     z-index: 1;
     opacity: 0;
     transform: translateY(60px);
@@ -439,12 +439,17 @@ hr.separator {
 }
 
 .hero-section h2 {
-    font-size:  clamp(0.9, 6vw, 3rem); 
+    font-size: clamp(1.2rem, 5vw, 1.8rem);
     font-weight: 700;
-    line-height: 1.3;
-    margin: 0 0 20px 0;
+    line-height: 1.6;
+    margin: 0 auto 25px auto;
+    padding: 15px;
     color: #ffffff;
+
     letter-spacing: 1px;
+
+    text-align: center;
+    max-width: 1300px; /* più spazio orizzontale */
 }
 
 .hero-btn {
@@ -453,7 +458,7 @@ hr.separator {
     padding: 
         clamp(12px, 1vw, 15px) 
         clamp(24px, 1vw, 50px);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     background-color: var(--accent);
     color: white;
@@ -485,9 +490,12 @@ hr.separator {
 @media (max-width: 768px) {
 
     .hero-section h2 {
-        font-size: clamp(0.85rem, 3.5vw, 1.2rem);
-        margin: 0 0 12px 0;
-        letter-spacing: 0.5px;
+        font-size: clamp(1rem, 5.5vw, 1.6rem);
+        line-height: 1.7;
+        letter-spacing: 1px;
+        max-width: 92%;
+        margin: 0 auto 20px auto;
+        text-align: justify;
     }
 
     .hero-content {
