@@ -489,20 +489,19 @@ hr.separator {
 
 @media (max-width: 768px) {
 
-    .hero-section h2 {
-        font-size: clamp(1rem, 5.5vw, 1.6rem);
-        line-height: 2.0;
-        letter-spacing: 1px;
-        max-width: 80%;
-        margin: 0 auto 20px auto;
-        text-align: justify;
-        padding: 10px;
-    }
-
     .hero-content {
         font-size: clamp(0.9rem, 5.5vw, 1.3rem);
     }
     
+    .hero-content h2{
+        font-size: clamp(1rem, 5.5vw, 1.6rem);
+        font-weight: 700;
+        line-height: 1.6;
+                max-width: 80%;
+        margin: 0 auto 25px auto;
+        padding: 10px;
+    }
+
     .hero-btn {
         margin-top: 12px;
         padding: 8px 20px;
