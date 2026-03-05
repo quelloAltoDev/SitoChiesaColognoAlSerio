@@ -672,7 +672,7 @@ hr.separator {
 }
 
 .contacts h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     margin: 0 0 40px 0;
     text-align: center;
@@ -688,7 +688,7 @@ hr.separator {
 }
 
 .contact-info h3 {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     font-weight: 600;
     margin: 0 0 8px 0;
     color: var(--primary);
@@ -706,12 +706,22 @@ hr.separator {
     color: var(--accent);
 }
 
+.map-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.map-link:hover p {
+  color: #E63946;
+  cursor: pointer;
+}
+
 /* === CONTACT FORM === */
 .contact-form {
     background: #fafafa;
     padding: 40px;
     border-radius: 12px;
-    border: 1px solid var(--border-light);
+    border: 1px solid var(--primary);
 }
 
 .form-group {
@@ -720,7 +730,7 @@ hr.separator {
 
 label {
     display: block;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 8px;
     color: var(--text-dark);
@@ -732,7 +742,7 @@ textarea {
     padding: 12px 14px;
     border: 1px solid var(--border-light);
     border-radius: 8px;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     background: #fff;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
