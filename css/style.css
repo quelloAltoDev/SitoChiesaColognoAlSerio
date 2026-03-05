@@ -736,7 +736,7 @@ textarea:focus {
     outline: none;
 }
 
-button[type="submit"] {
+.btnContact {
     padding: 12px 32px;
     background: var(--primary);
     color: #fff;
@@ -748,7 +748,7 @@ button[type="submit"] {
     transition: all 0.3s ease;
 }
 
-button[type="submit"]:hover {
+.btnContact:hover {
     background: var(--accent);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(230, 57, 70, 0.2);

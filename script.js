@@ -1,23 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
-const track = document.querySelector('.carousel-track');
-const slides = Array.from(track.children);
+  const track = document.querySelector('.carousel-track');
+  
+  if (!track) return; // ← esce subito se non trova il carosello
 
-let currentIndex = 0;
-const slideCount = slides.length;
-const intervalTime = 5000; // 5 secondi
+  const slides = Array.from(track.children);
 
-function moveCarousel() {
+  let currentIndex = 0;
+  const slideCount = slides.length;
+  const intervalTime = 5000;
+
+  function moveCarousel() {
     currentIndex++;
-
     if (currentIndex >= slideCount) {
-        currentIndex = 0;
+      currentIndex = 0;
     }
-
-    const newPosition = -currentIndex * 100; // sposta di 100% ogni slide
+    const newPosition = -currentIndex * 100;
     track.style.transform = `translateX(${newPosition}%)`;
-}
+  }
 
-setInterval(moveCarousel, intervalTime);
+  setInterval(moveCarousel, intervalTime);
 });
 
     const btn = document.getElementById('hamburgerBtn');
@@ -45,20 +46,3 @@ setInterval(moveCarousel, intervalTime);
         }
     });
 
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault(); // evita il refresh della pagina
-
-    const formData = new FormData(this);
-
-    fetch("send_mail.php", {
-        method: "POST",
-        body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById("response").innerText = data;
-    })
-    .catch(error => {
-        document.getElementById("response").innerText = "Errore durante l'invio.";
-    });
-});
