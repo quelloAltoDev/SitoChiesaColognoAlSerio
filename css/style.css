@@ -1,6 +1,6 @@
 :root {
     --primary: #0b3954;
-    --accent: #E63946;
+    --accent: #df5353;
     --accent-light: #A4161A;
     --text-dark: #1a1a1a;
     --text-light: #666;
@@ -246,7 +246,7 @@ nav ul li a:hover {
 }
 
 .carousel-overlay h2 {
-    color: var(--accent);
+    color: #E63946;
     font-family: 'Poppins', 'Segoe UI', sans-serif;
 
     font-size: clamp(1.8rem, 1.8vw, 3.5rem);
@@ -767,9 +767,9 @@ textarea:focus {
 }
 
 .btnContact:hover {
-    background: var(--accent);
+    background: #33b419;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(230, 57, 70, 0.2);
+    box-shadow: 0 4px 12px rgba(29, 165, 36, 0.38);
 }
 
 
