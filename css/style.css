@@ -767,7 +767,7 @@ textarea:focus {
 }
 
 .btnContact:hover {
-    background: #33b419;
+    background: #3b8a2b;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(29, 165, 36, 0.38);
 }
