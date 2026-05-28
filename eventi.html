@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chiesa Evangelica Cologno al Serio</title>
+    <title></title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <script type="text/javascript" src="https://embeds.iubenda.com/widgets/8f6afe46-1afe-49cb-8383-819dd4d91ad6.js"></script>    
+        <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
     <link rel="shortcut icon" href="favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-<script>
-  emailjs.init("upIIoGnLJaFkjvSaZ");
-</script>
-    <script type="text/javascript" src="https://embeds.iubenda.com/widgets/8f6afe46-1afe-49cb-8383-819dd4d91ad6.js"></script>    
 </head>
 <body>
 <header>
@@ -36,90 +32,52 @@
         </ul>
     </nav>
 </header>
-
     <script src="script.js"></script>
 
-    <hr class="separator" role="separator" aria-hidden="true">
+        <hr class="separator" role="separator" aria-hidden="true">
             <main class="about-section">
         <div class="content">
-            <h1>Contatti</h1>
-            <section>
-<div class="contact-info">
-    <div>
-        <h3><strong>Indirizzo:</strong></h3>
-            <a href="https://maps.google.com/?q=Via+Cesare+Battisti,+2,+24055+Cologno+al+Serio+BG" target="_blank" class="map-link">
-        <p>Via Cesare Battisti, 2 <br> 24055, Cologno al Serio (BG)</p></a>
-    </div>
-
-    <div>
-        <h3><strong>Email:</strong></h3>
-          <p><a href="mailto:info@evangelicicolognoalserio.it"> info@evangelicicolognoalserio.it</a></p>
-    </div>
-
-    <div>
-        <h3><strong>Telefono:</strong></h3>
-        <p>
-            <a href="tel:+393386501918">338 650 1918 (Abramo Manduzio)</a><br>
-            <a href="tel:+393497893594">349 789 3594 (Matteo Benevolo)</a></p>
-        </p>
-    </div>
-</div>
-</section>
-
-<form id="contact-form" class="contact-form">
-    <div class="form-group">
-        <label for="name">Nome e Cognome</label>
-  <input type="text" name="from_name" placeholder="Nome e Cognome" required />
-    </div>
-    <div class="form-group">
-        <label for="email">Email</label>
-  <input type="email" name="from_email" placeholder="Email" required />
-    </div>
-    <div class="form-group">
-        <label for="message">Messaggio</label>
-  <textarea name="message" placeholder="Messaggio" required></textarea>
-    </div>
-  <button class="btnContact" type="button" onclick="sendEmail()">Invia</button>
-</form>
-
-<script>
-  function sendEmail() {
-      const name = document.querySelector('[name="from_name"]').value.trim();
-  const email = document.querySelector('[name="from_email"]').value.trim();
-  const message = document.querySelector('[name="message"]').value.trim();
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-  if (!name) {
-    alert("Inserisci il tuo nome.");
-    return;
-  }
-  if (!email) {
-    alert("Inserisci la tua email.");
-    return;
-  }
-  if (!emailRegex.test(email)) {
-    alert("Inserisci un'email valida.");
-    return;
-  }
-  if (!message) {
-    alert("Scrivi un messaggio.");
-    return;
-  }
-    emailjs.sendForm("service_ionr3ii", "template_lfrt3o6", "#contact-form")
-      .then(() => {
-        alert("Messaggio inviato con successo!");
-        document.getElementById("contact-form").reset();
-      })
-      .catch((error) => {
-        alert("Errore nell'invio. Riprova.");
-        console.error(error);
-      });
-  }
-</script>
-
+            <h1>Eventi</h1>
+                <section>
+                <p stytl>
+                Scopri gli eventi della nostra comunità: appuntamenti speciali per condividere la fede e conoscere la Parola di Dio.
+                </p>
+                </section>
+<section class="eventi-container">
+    <section class="evento-card">
+        <div class="evento-immagine">
+            <img src="eventi/locandina evangelizzazione.jpeg" alt="Attività evangelizzazione">
+        </div>
+        <div class="evento-contenuto">
+            <p>
+                <strong class="evento-titolo">Attività di evangelizzazione</strong><br>
+                <span class="evento-data">
+                    <span class="evento-data-icona">🕒</span> 6 GIUGNO 2026 - 15.30
+                </span><br>
+                        Ci puoi trovare al parco di Punta Rocca a Cologno al Serio(BG) per parlarti di Dio e del suo piano di salvezza. 
+                        Attività di evangelizzazione aperta a tutti, con momenti di dialogo, e visione d'insieme della verità presente nella Bibbia. 
+                        Un’occasione per incontrare persone, confrontarsi sulla fede e vivere un’esperienza che può cambiarti la vita.             
+                    </p>
+        </div>
     </section>
+    <section class="evento-card">
+        <div class="evento-immagine">
+            <img src="eventi/incontro giovani 30-06.jpg" alt="Incontro giovani">
+        </div>
+        <div class="evento-contenuto">
+            <p>
+                <strong class="evento-titolo">Incontro giovani</strong><br>
+                <span class="evento-data">
+                    <span class="evento-data-icona">🕒</span> 30 MAGGIO 2026 - 17.00
+                </span><br>
+                        Incontro giovani con attività di gruppo, giochi, canti, e studio biblico. Un’occasione per conoscersi, 
+                        fare nuove amicizie e vivere una serata dinamica tra giochi, chiacchiere e momenti di condivisione.  
+            </p>
+        </div>
+    </section>
+</section>
+        </div>
     </main>
-</body>
 <footer class="footer">
   <div class="footer-column">
     <h3>Contatti</h3>
